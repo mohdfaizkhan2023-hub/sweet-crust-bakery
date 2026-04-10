@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Crust Bakery</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf3;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #d2691e, #f4a460);
+      color: white;
+      padding: 30px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #d2691e;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #8b4513;
+    }
+    .hero {
+      background: url('bakery-hero.jpg') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      animation: zoomIn 3s ease-in-out;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    footer {
+      background: #d2691e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes zoomIn {
+      from {transform: scale(1.1);}
+      to {transform: scale(1);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sweet Crust Bakery</h1>
+    <p>Baked Fresh Daily with Love</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    Fresh Bread & Pastries
+  </div>
+<section class="section" id="menu">
+  <h2>Our Menu</h2>
+  <div class="products">
+    <div class="product">
+      <img src="bread.jpg" alt="Fresh Bread">
+      <h3>Artisan Bread</h3>
+      <p>₹120</p>
+      <a href="https://wa.me/9354523991?text=Hello%20Sweet%20Crust%20Bakery,%20I%20want%20to%20order%20Artisan%20Bread" 
+         target="_blank" 
+         style="display:inline-block; background-color:#25D366; color:white; padding:10px 15px; border-radius:8px; text-decoration:none; font-weight:bold; margin-top:10px;">
+         📲 Order on WhatsApp
+      </a>
+    </div>
+    <div class="product">
+      <img src="cake.jpeg" alt="Chocolate Cake">
+      <h3>Chocolate Cake</h3>
+      <p>₹450</p>
+      <a href="https://wa.me/9354523991?text=Hello%20Sweet%20Crust%20Bakery,%20I%20want%20to%20order%20Chocolate%20Cake" 
+         target="_blank" 
+         style="display:inline-block; background-color:#25D366; color:white; padding:10px 15px; border-radius:8px; text-decoration:none; font-weight:bold; margin-top:10px;">
+         📲 Order on WhatsApp
+      </a>
+    </div>
+    <div class="product">
+      <img src="cookies.jpg" alt="Cookies">
+      <h3>Butter Cookies</h3>
+      <p>₹200</p>
+      <a href="https://wa.me/9354523991?text=Hello%20Sweet%20Crust%20Bakery,%20I%20want%20to%20order%20Butter%20Cookies" 
+         target="_blank" 
+         style="display:inline-block; background-color:#25D366; color:white; padding:10px 15px; border-radius:8px; text-decoration:none; font-weight:bold; margin-top:10px;">
+         📲 Order on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+
+ 
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>We are a family-run bakery in Delhi, serving fresh breads, cakes, and pastries made with love and the finest ingredients.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 123 Sweet Street, Delhi</p>
+    <p>📞 +91 98765 43210</p>
+    <p>⏰ Open daily: 8 AM – 9 PM</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Sweet Crust Bakery</p>
+  </footer>
+</body>
+</html>
